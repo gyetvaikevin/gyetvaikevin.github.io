@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", serif;
+   background-color: #ffffd4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 200%;
+    color: #ff7f2a;
+    background-image: url("../img/pilis.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px;
+}
+
+nav {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background-color: #ff7f2a;
+    border-radius: 15px;
+}
+
+nav ul li {
+    margin: 5px;
+    padding: 10px;
+
+}
+
+nav ul a:hover {
+    background-color: #bf153f;
+    border-radius: 15px;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.contents {
+    width: 70%;
+    margin: 0 auto;
+    border: 2px solid brown;
+    background-color: white;
+    color: #555;
+}
+
+img {
+    width: 30%;
+    float: right;
+    margin-left: 10px;
+
+}
+
+.content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content {
+    margin: 20px;
+}
+
+.content ul {
+    padding-left: 25px;
+}
