@@ -1,1 +1,0 @@
-# gyetvaikevin.github.io
