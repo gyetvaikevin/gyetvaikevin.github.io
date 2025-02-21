@@ -1,41 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500|PT+Sans+Narrow:400,700|Play:400,700|Ubuntu+Condensed&display=swap&subset=cyrillic');
-@media only screen and (max-width: 850px){
-    .img-container img {
-     display: none;
-     }
-    .site-container{font-size: 70%;
-    }
-    .card{
-        min-width: 85%;
-    }
-    .breadcrumb {
-        flex-direction: column; 
-        align-items: center; 
-        gap: 2px; 
-    }
 
-    .breadcrumb__item {
-        width: 100%; 
-        text-align: center;
-    }
-
-    .breadcrumb__item a {
-        width: 90%; 
-        text-align: center;
-        font-size: 14px; 
-        padding: 12px 0;
-    }
-    .nav-wrapper {
-        margin-top: 50px;
-        padding: 20px 0; 
-    }
-}
-@media (max-width: 480px) {
-        .breadcrumb__item a {
-            font-size: 10px; 
-            padding: 10px 0;
-        }
- }
+/* Oldalak alap témája */
 :root {
     font-size: 125%;
 }
@@ -54,7 +19,6 @@ body {
     color: #224;
     background:
         url(../img/background-img-01.jpg) center 20%/ cover no-repeat fixed;
-
 }
 
 p {
@@ -70,7 +34,6 @@ p:not(:last-child) {
     place-items: center;
     padding: 1.5em;
 }
-
 
 .card {
 
@@ -101,11 +64,7 @@ header {
 
 }
 
-
-
-
-
-
+/* Menü */
 ul,
 li {
     list-style: none;
@@ -120,7 +79,6 @@ body {
 
     display: flex;
     flex-direction: column;
-    min-width: 480px;
     padding: 0 40px;
 }
 
@@ -140,7 +98,6 @@ a {
     z-index: 1;
     justify-content: center;
 }
-
 
 .breadcrumb__item a {
     height: 100%;
@@ -163,7 +120,6 @@ a {
     cursor: pointer;
 }
 
-
 .breadcrumb__item a:hover {
     background: #490099;
     color: #FFF;
@@ -183,6 +139,7 @@ a {
     overflow: hidden;
     white-space: nowrap;
 }
+
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -192,6 +149,93 @@ a {
     padding: 10px 15px;
     border-radius: 5px;
     margin: 10px;
+}
+
+/* Űrlapok */
+input {
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+/* Képek */
+.img-container {
+    width: 20%;
+    text-align: center;
+}
+
+.img-container img {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 300px;
+}
+
+.img-container-2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-container-2 img {
+    width: 40%;
+}
+
+h3 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Media query*/
+@media only screen and (max-width: 850px) {
+    .img-container img {
+        display: none;
+    }
+
+    .site-container {
+        font-size: 70%;
+    }
+
+    .card {
+        min-width: 85%;
+    }
+
+    .breadcrumb {
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .breadcrumb__item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .breadcrumb__item a {
+        width: 90%;
+        text-align: center;
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .nav-wrapper {
+        min-width: 80%;
+        margin-top: 50px;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .breadcrumb__item a {
+        font-size: 10px;
+        padding: 10px 0;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -217,46 +261,3 @@ a {
         padding: 0 20px;
     }
 }
-
-input {
-    display: block;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-button {
-    padding: 10px;
-    border-radius: 20px;
-    margin-top: 10px;
-}
-
-.img-container {
-
-    width: 20%;
-
-    text-align: center;
-}
-
-.img-container img {
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-
-    width: 300px;
-}
-
-.img-container-2 {
-    display: flex;
-    justify-content: center; 
-    gap: 20px; 
-}
-
-.img-container-2 img {
-    width: 40%; 
-}
-h3{
-    margin-top: 10px;
-    text-align: center;
-}
-
-
