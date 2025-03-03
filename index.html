@@ -4,71 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming Világ</title>
+    <title>Strandolós Oldal</title>
+    <meta name="description" content="Magyarország népszerűbb tavainak ismertetése, illetve részletes bemutatása.">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <meta name="descreption"
-        content="Bevezetés a videojátékok világába. Itt találhatsz hasznos információkat ezzel kapcsolatban.">
-    <meta name="author" content="Gyetvai Kevin">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-
 </head>
 
 <body>
-    <header>
-        <h1 class="animate__animated animate__bounceInLeft">Gaming Világ</h1>
-    </header>
-    <div class="nav-wrapper">
-        <nav class="container">
-            <ul class="breadcrumb">
-                <li class="breadcrumb__item">
-                    <a href="index.html">
-                        <span class="breadcrumb__inner">
-                            <span class="breadcrumb__title">Főoldal</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="breadcrumb__item">
-                    <a href="tippek.html">
-                        <span class="breadcrumb__inner">
-                            <span class="breadcrumb__title">Tippek & Trükkök</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="breadcrumb__item">
-                    <a href="ajanlasok.html">
-                        <span class="breadcrumb__inner">
-                            <span class="breadcrumb__title">Játék Ajánlások</span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
 
-    <div class="site-container">
-        <main class="card">
-            <h2>Üdvözöl a Gaming Világ!</h2>
-            <p>A videojátékok világa folyamatosan fejlődik, és egyre több izgalmas lehetőséget kínál a játékosok
-                számára.
-                Ezen az oldalon megtalálhatod a legjobb tippeket és játékajánlókat, hogy még élvezetesebb legyen a
-                gaming élményed!</p>
-            <h3>Feliratkozás hírlevélre</h3>
-            <p>Iratkozz fel, hogy elsőként értesülj az új játékmegjelenésekről!</p>
-            <div class="img-container"><img src="img/kontroller.jpg" alt="Kontroller"></div>
-            <form action="#" method="post">
+    <div class="container">
+        <header><img src="img/strandolas.jpg" alt="Strandolás"></header>
+
+
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#szekcio1">Balaton</a></li>
+                    <li><a href="#szekcio2">Tisza-tó</a></li>
+                    <li><a href="#szekcio3">Szelidi-tó</a></li>
+                </ul>
+            </nav>
+
+            <form>
+                <h3>Kérem töltse ki a jelentkezési űrlapot</h3>
+            
                 <label for="name">Név:</label>
-                <input type="text" id="name" name="name" required>
-
+                <input type="text" id="name" placeholder="Pl. Kovács Péter" required>
+                <small>Kérjük, adja meg a teljes nevét.</small>
+            
                 <label for="email">E-mail cím:</label>
-                <input type="email" id="email" name="email" required>
-
-                <button type="submit">Feliratkozás</button>
+                <input type="email" id="email" placeholder="Pl. pelda@email.com" required>
+                <small>Erre az e-mail címre küldjük a visszaigazolást.</small>
+            
+                <label for="phone">Telefonszám:</label>
+                <input type="tel" id="phone" placeholder="Pl. +36 30 123 4567" pattern="\+?[0-9\s\-]{7,15}" required>
+                <small>Adja meg telefonszámát nemzetközi formátumban (+36 ...).</small>
+            
+                <label for="lake">Melyik tó érdekli?</label>
+                <select id="lake">
+                    <option value="balaton">Balaton</option>
+                    <option value="tisza">Tisza-tó</option>
+                    <option value="szelidi">Szelidi-tó</option>
+                </select>
+                <small>Válassza ki a kívánt úti célt!</small>
+            
+                <label for="accommodation">Milyen szállást keres?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="hotel"> Szálloda</label>
+                    <label><input type="checkbox" id="apartment"> Apartmanház</label>
+                    <label><input type="checkbox" id="camping"> Kemping</label>
+                </div>
+                <small>Többet is választhat.</small>
+            
+                <label for="meal">Milyen ellátás legyen?</label>
+                <select id="meal">
+                    <option value="full">Teljes panzió</option>
+                    <option value="half">Fél panzió</option>
+                    <option value="breakfast">Csak reggeli</option>
+                    <option value="none">Nem kérek ellátást</option>
+                </select>
+                <small>Válassza ki a kívánt ellátást!</small>
+            
+                <label for="message">Egyéb üzenet:</label>
+                <textarea id="message" placeholder="Ide írhatja megjegyzéseit..."></textarea>
+                <small>Ha van további kérdése, itt jelezheti.</small>
+            
+                <button type="submit">Mehet</button>
             </form>
-            <p class="card-footer">&copy; 2025 Gaming Világ</p>
-        </main>
-    </div>
+            
+        </aside>
 
+        <main>
+            <section id="szekcio1">
+                <h2>Balaton</h2>
+                <div class="content"><img src="img/balaton.jpg" alt="Balaton">
+                    <p>A Balaton Magyarország legnagyobb tava, és egyben Közép-Európa legnagyobb édesvizű tava is.
+                        Hossza
+                        körülbelül 77 kilométer, legnagyobb szélessége 14 kilométer, míg átlagos mélysége csupán 3-4
+                        méter.
+                        Nyáron a vize gyorsan felmelegszik, így ideális fürdőhely a turisták számára. A tó déli partja
+                        sekélyebb, míg az északi partján hirtelen mélyül, ezért különböző igényeket is kielégít. Számos
+                        üdülőhely található a partján, például Siófok, Balatonfüred és Keszthely, amelyek kulturális és
+                        szórakoztató programokat is kínálnak. A Balaton-felvidék híres borvidékeiről és vulkáni
+                        tanúhegyeiről, így a borkedvelők is megtalálják a számításukat. A tó körül kerékpárút húzódik,
+                        ami
+                        kiváló lehetőséget biztosít a sportolásra és a természet felfedezésére. Télen a Balaton
+                        befagyhat,
+                        és korcsolyázásra is alkalmas lehet. A tó környezete gazdag természeti értékekben, számos
+                        madárfaj
+                        és védett növény él itt.</p>
+                </div>
+            </section>
+
+            <section id="szekcio2">
+                <h2>Tisza-tó</h2>
+                <div class="content"><img src="img/tisza-to.jpg" alt="Tisza-tó">
+                    <p>A Tisza-tó Magyarország második legnagyobb tava, amely mesterségesen jött létre a Tisza
+                        szabályozásának részeként. Területe mintegy 127 négyzetkilométer, és számos kis szigettel,
+                        holtággal, nádasokkal tarkított vizes élőhely. A tó rendkívül gazdag növény- és állatvilággal
+                        rendelkezik, így kedvelt hely a természetkedvelők és a madármegfigyelők számára. A vízisportok
+                        szerelmesei számára is kiváló lehetőségeket kínál, legyen szó kajakozásról, horgászatról vagy
+                        motorcsónakázásról. Poroszlón található a Tisza-tavi Ökocentrum, amely interaktív kiállításokkal
+                        és
+                        akváriumokkal mutatja be a tó élővilágát. A tó körül kialakított kerékpárút lehetőséget biztosít
+                        a
+                        kényelmes és biztonságos bringázásra. A Tisza-tó különleges vonzereje, hogy kevésbé zsúfolt,
+                        mint a
+                        Balaton, így nyugodtabb kikapcsolódást kínál a látogatóknak. A tó területén horgászparadicsom
+                        található, ahol különböző halfajokat lehet kifogni. A nyári időszakban számos fesztivált és
+                        rendezvényt szerveznek a tó környékén, így mindig van mit felfedezni.</p>
+                </div>
+            </section>
+
+            <section id="szekcio3">
+                <h2>Szelidi-tó</h2>
+                <div class="content"><img src="img/szelidi-to.jpg" alt="Szelidi-tó">
+                    <p>A Szelidi-tó egy kisebb természetes tó Magyarországon, amely a Duna mentén, Bács-Kiskun megyében
+                        található. A tó hossza körülbelül 4 kilométer, míg szélessége átlagosan 150-200 méter. Vizét
+                        termálforrások táplálják, így a nyári időszakban is kellemes hőmérsékletű marad. A tó vize
+                        enyhén
+                        sós, amit gyógyhatásúnak tartanak, így sokan keresik fel egészségmegőrzési céllal is. A tó
+                        partján
+                        homokos strandok és kempingek várják a látogatókat, ami ideálissá teszi a pihenésre és családi
+                        kikapcsolódásra. A horgászok is kedvelik, mivel gazdag halállománnyal rendelkezik. A tó
+                        környezetében különböző túraútvonalak és tanösvények találhatók, így a természetjárók számára is
+                        remek úti cél. Nyáron különböző rendezvényeket, például zenei fesztiválokat és sporteseményeket
+                        tartanak a partján. A tó csendesebb és nyugodtabb alternatívát kínál a nagyobb üdülőhelyekhez
+                        képest, így tökéletes helyszín a kikapcsolódásra. Az itt található vendégházak és apartmanok
+                        kiváló
+                        lehetőséget nyújtanak a hosszabb tartózkodásra is.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Strandolós Oldal</p>
+        </footer>
+    </div>
 
 </body>
 
