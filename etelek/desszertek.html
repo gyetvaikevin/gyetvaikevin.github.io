@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <!-- Alap meta címkék -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta címkék -->
+    <title>XL Pizza & Ételbár | Friss pizzák és házias ételek | Sződ</title>
+    <meta name="description"
+        content="Sződ legfinomabb pizzái és magyar specialitásai! A XL Pizza & Ételbár minőségi alapanyagokból készít elérhető áron ételt. Házhozszállítás Sződön és környékén.">
+    <meta name="keywords"
+        content="pizza sződ, ételbár sződ, magyar konyha, gyorsétterem sződ, ételrendelés sződ, friss pizza, olcsó étel, házhozszállítás sződ">
+
+    <!-- OpenGraph / Social Media meta címkék -->
+    <meta property="og:title" content="XL Pizza & Ételbár Sződön | Friss pizzák és házias ételek">
+    <meta property="og:description"
+        content="Sződ legfinomabb pizzái! Próbáld ki házias specialitásainkat is. Házhozszállítás Sződön és környékén.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.xlpizza-szod.hu">
+    <meta property="og:image" content="https://www.xlpizza-szod.hu/images/og-image.jpg">
+    <meta property="og:locale" content="hu_HU">
+
+    <!-- Twitter Card meta címkék -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="XL Pizza & Ételbár Sződön | Friss pizzák és házias ételek">
+    <meta name="twitter:description" content="Sződ legfinomabb pizzái! Házhozszállítás Sződön és környékén.">
+    <meta name="twitter:image" content="https://www.xlpizza-szod.hu/images/twitter-image.jpg">
+
+    <!-- Helyspecifikus meta adatok -->
+    <meta name="geo.region" content="HU-PE">
+    <meta name="geo.placename" content="Sződ">
+    <meta name="geo.position" content="47.7245;19.1768">
+    <meta name="ICBM" content="47.7245, 19.1768">
+
+    <link rel="icon" href="../img/xl-pizza-logo2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/xl-pizza-logo2.ico" alt="XL Pizza & Ételbár Logo">
+            </a>
+        </div>
+        <!-- Hamburger ikon -->
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="navbar nav-links" id="navbar">
+            <ul>
+                <li>
+                    <i class="fas fa-phone"></i> <!-- Telefon ikon -->
+                    <a href="tel:+36 70 781 2121">+36 70 781 2121</a> <!-- Telefon link -->
+                </li>
+                <li><a href="../index.html">Kezdőlap</a></li>
+                <li class="dropdown">
+                    <a href="../etlap.html">Étlap</a>
+                    <ul class="dropdown-menu sub-menu">
+                        <li><a href="../etelek/foetelek.html">Főételek</a></li>
+                        <li><a href="../etelek/pizzak.html">Pizzák</a></li>
+                        <li><a href="../etelek/talak.html">Tálak</a></li>
+                        <li><a href="../etelek/levesek.html">Levesek</a></li>
+                        <li><a href="../etelek/desszertek.html">Desszertek</a></li>
+                    </ul>
+                </li>
+                <li><a href="../kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="details-container">
+        <h2>Desszerteink</h2>
+        <div class="container">
+
+            <div class="card">
+                <img src="../img/palacsinta.jpg" alt="Palacsinta">
+                <h2>Palacsinta</h2>
+                <p>Kakaós, ízes, áfonyás túrós palacsinta.</p>
+                <p>Ár: 200 Ft/db</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <div class="card">
+                <img src="../img/nutellas-palacsinta.jpg" alt="Nutellás palacsinta">
+                <h2>Nutellás palacsinta</h2>
+                <p>Nutellával töltött palacsinta.</p>
+                <p>Ár: 250 Ft/db</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+      
+            <div class="card">
+                <img src="../img/somloi-galuska.jpg" alt="Házi somlói galuska">
+                <h2>Házi somlói galuska</h2>
+                <p>Házi készítésű somlói galuska tejszínhabbal és csokoládéöntettel.</p>
+                <p>Ár: 850 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+   
+            <div class="card">
+                <img src="../img/gesztenyepure.jpg" alt="Gesztenyepűré">
+                <h2>Gesztenyepűré</h2>
+                <p>Édes gesztenyepűré tejszínhabbal.</p>
+                <p>Ár: 850 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+        </div>
+    </div>
+    <button id="backToTop" title="Vissza a tetejére">↑</button>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> XL Pizza & Ételbár. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="../js/functions.js"></script>
+</body>
+
+</html>

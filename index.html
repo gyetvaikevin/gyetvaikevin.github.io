@@ -1,146 +1,121 @@
 <!DOCTYPE html>
 <html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XL Pizza & Ételbár | Friss pizzák gyors kiszállítással | Sződ</title>
+    <link rel="icon" href="img/xl-pizza-logo2.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Prémium minőségű pizzák friss alapanyagokból. Rendelj és élvezd a gyors szállítást! Napi akciók, családi menük, glutenmentes választék."
+    />
+    <meta
+      name="keywords"
+      content="pizza, ételrendelés, gyorskiszállítás, sződ, hamburger, italok, családi menü, akció"
+    />
+    <meta name="geo.region" content="HU" />
+    <meta name="geo.placename" content="Sződ" />
+    <!-- Facebook Open Graph -->
+    <meta
+      property="og:title"
+      content="XL Pizza & Ételbár | Sződ legjobb pizzája"
+    />
+    <meta
+      property="og:description"
+      content="Prémium pizzák friss alapanyagokból. Rendelj most!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.xlpizza.hu" />
+    <meta property="og:image" content="#" />
+    <meta property="og:site_name" content="XL Pizza" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strandolós Oldal</title>
-    <meta name="description" content="Magyarország népszerűbb tavainak ismertetése, illetve részletes bemutatása.">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@xlpizza" />
 
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
 
-    <div class="container">
-        <header><img src="img/strandolas.jpg" alt="Strandolás"></header>
+  <body>
+    <!-- Fejléc -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/xl-pizza-logo2.ico" alt="XL Pizza & Ételbár Logo" />
+        </a>
+      </div>
+      <!-- Hamburger ikon -->
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav class="navbar nav-links" id="navbar">
+        <ul>
+          <li>
+            <i class="fas fa-phone"></i>
+            <!-- Telefon ikon -->
+            <a href="tel:+36 70 781 2121">+36 70 781 2121</a>
+            <!-- Telefon link -->
+          </li>
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li class="dropdown">
+            <a href="etlap.html">Étlap</a>
+            <ul class="dropdown-menu sub-menu">
+              <li><a href="etelek/foetelek.html">Főételek</a></li>
+              <li><a href="etelek/pizzak.html">Pizzák</a></li>
+              <li><a href="etelek/talak.html">Tálak</a></li>
+              <li><a href="etelek/levesek.html">Levesek</a></li>
+              <li><a href="etelek/desszertek.html">Desszertek</a></li>
+            </ul>
+          </li>
+          <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <!-- Tartalom -->
+    <main>
+      <section class="contact main-page">
+        <h1>Üdvözöljük az XL Pizza & Ételbárban!</h1>
+        <p>
+          Ízletes ételek, friss alapanyagok és kiváló kiszállítási szolgáltatás.
+        </p><video id="myVideo"
+        muted 
+       autoplay 
+       playsinline 
+       loop>
+            <source src="video/xlpizza_video1.mp4" type="video/mp4">
+            A böngésződ nem támogatja a HTML5 videót
+          </video>
 
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href="#szekcio1">Balaton</a></li>
-                    <li><a href="#szekcio2">Tisza-tó</a></li>
-                    <li><a href="#szekcio3">Szelidi-tó</a></li>
-                </ul>
-            </nav>
+        <div class="nyitvatartas">
+          <h3>Nyitvatartás:</h3>
+          <ul>
+            <li><strong>Hétfőtől szombatig:</strong> 12–21 óráig</li>
+            <li><strong>Vasárnap:</strong> 12–15 óráig</li>
+          </ul>
+        </div>
 
-            <form>
-                <h3>Kérem töltse ki a jelentkezési űrlapot</h3>
-            
-                <label for="name">Név:</label>
-                <input type="text" id="name" placeholder="Pl. Kovács Péter" required>
-                <small>Kérjük, adja meg a teljes nevét.</small>
-            
-                <label for="email">E-mail cím:</label>
-                <input type="email" id="email" placeholder="Pl. pelda@email.com" required>
-                <small>Erre az e-mail címre küldjük a visszaigazolást.</small>
-            
-                <label for="phone">Telefonszám:</label>
-                <input type="tel" id="phone" placeholder="Pl. +36 30 123 4567" pattern="\+?[0-9\s\-]{7,15}" required>
-                <small>Adja meg telefonszámát nemzetközi formátumban (+36 ...).</small>
-            
-                <label for="lake">Melyik tó érdekli?</label>
-                <select id="lake">
-                    <option value="balaton">Balaton</option>
-                    <option value="tisza">Tisza-tó</option>
-                    <option value="szelidi">Szelidi-tó</option>
-                </select>
-                <small>Válassza ki a kívánt úti célt!</small>
-            
-                <label for="accommodation">Milyen szállást keres?</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" id="hotel"> Szálloda</label>
-                    <label><input type="checkbox" id="apartment"> Apartmanház</label>
-                    <label><input type="checkbox" id="camping"> Kemping</label>
-                </div>
-                <small>Többet is választhat.</small>
-            
-                <label for="meal">Milyen ellátás legyen?</label>
-                <select id="meal">
-                    <option value="full">Teljes panzió</option>
-                    <option value="half">Fél panzió</option>
-                    <option value="breakfast">Csak reggeli</option>
-                    <option value="none">Nem kérek ellátást</option>
-                </select>
-                <small>Válassza ki a kívánt ellátást!</small>
-            
-                <label for="message">Egyéb üzenet:</label>
-                <textarea id="message" placeholder="Ide írhatja megjegyzéseit..."></textarea>
-                <small>Ha van további kérdése, itt jelezheti.</small>
-            
-                <button type="submit">Mehet</button>
-            </form>
-            
-        </aside>
+        <a href="etlap.html" class="btn">Étlap megtekintése</a>
+      </div>
+      <div class="video-container">
+        
+      </section>
+    </main>
+    <button id="backToTop" title="Vissza a tetejére">↑</button>
+    <!-- Lábléc -->
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> XL Pizza & Ételbár. Minden jog
+        fenntartva.
+      </p>
+    </footer>
 
-        <main>
-            <section id="szekcio1">
-                <h2>Balaton</h2>
-                <div class="content"><img src="img/balaton.jpg" alt="Balaton">
-                    <p>A Balaton Magyarország legnagyobb tava, és egyben Közép-Európa legnagyobb édesvizű tava is.
-                        Hossza
-                        körülbelül 77 kilométer, legnagyobb szélessége 14 kilométer, míg átlagos mélysége csupán 3-4
-                        méter.
-                        Nyáron a vize gyorsan felmelegszik, így ideális fürdőhely a turisták számára. A tó déli partja
-                        sekélyebb, míg az északi partján hirtelen mélyül, ezért különböző igényeket is kielégít. Számos
-                        üdülőhely található a partján, például Siófok, Balatonfüred és Keszthely, amelyek kulturális és
-                        szórakoztató programokat is kínálnak. A Balaton-felvidék híres borvidékeiről és vulkáni
-                        tanúhegyeiről, így a borkedvelők is megtalálják a számításukat. A tó körül kerékpárút húzódik,
-                        ami
-                        kiváló lehetőséget biztosít a sportolásra és a természet felfedezésére. Télen a Balaton
-                        befagyhat,
-                        és korcsolyázásra is alkalmas lehet. A tó környezete gazdag természeti értékekben, számos
-                        madárfaj
-                        és védett növény él itt.</p>
-                </div>
-            </section>
-
-            <section id="szekcio2">
-                <h2>Tisza-tó</h2>
-                <div class="content"><img src="img/tisza-to.jpg" alt="Tisza-tó">
-                    <p>A Tisza-tó Magyarország második legnagyobb tava, amely mesterségesen jött létre a Tisza
-                        szabályozásának részeként. Területe mintegy 127 négyzetkilométer, és számos kis szigettel,
-                        holtággal, nádasokkal tarkított vizes élőhely. A tó rendkívül gazdag növény- és állatvilággal
-                        rendelkezik, így kedvelt hely a természetkedvelők és a madármegfigyelők számára. A vízisportok
-                        szerelmesei számára is kiváló lehetőségeket kínál, legyen szó kajakozásról, horgászatról vagy
-                        motorcsónakázásról. Poroszlón található a Tisza-tavi Ökocentrum, amely interaktív kiállításokkal
-                        és
-                        akváriumokkal mutatja be a tó élővilágát. A tó körül kialakított kerékpárút lehetőséget biztosít
-                        a
-                        kényelmes és biztonságos bringázásra. A Tisza-tó különleges vonzereje, hogy kevésbé zsúfolt,
-                        mint a
-                        Balaton, így nyugodtabb kikapcsolódást kínál a látogatóknak. A tó területén horgászparadicsom
-                        található, ahol különböző halfajokat lehet kifogni. A nyári időszakban számos fesztivált és
-                        rendezvényt szerveznek a tó környékén, így mindig van mit felfedezni.</p>
-                </div>
-            </section>
-
-            <section id="szekcio3">
-                <h2>Szelidi-tó</h2>
-                <div class="content"><img src="img/szelidi-to.jpg" alt="Szelidi-tó">
-                    <p>A Szelidi-tó egy kisebb természetes tó Magyarországon, amely a Duna mentén, Bács-Kiskun megyében
-                        található. A tó hossza körülbelül 4 kilométer, míg szélessége átlagosan 150-200 méter. Vizét
-                        termálforrások táplálják, így a nyári időszakban is kellemes hőmérsékletű marad. A tó vize
-                        enyhén
-                        sós, amit gyógyhatásúnak tartanak, így sokan keresik fel egészségmegőrzési céllal is. A tó
-                        partján
-                        homokos strandok és kempingek várják a látogatókat, ami ideálissá teszi a pihenésre és családi
-                        kikapcsolódásra. A horgászok is kedvelik, mivel gazdag halállománnyal rendelkezik. A tó
-                        környezetében különböző túraútvonalak és tanösvények találhatók, így a természetjárók számára is
-                        remek úti cél. Nyáron különböző rendezvényeket, például zenei fesztiválokat és sporteseményeket
-                        tartanak a partján. A tó csendesebb és nyugodtabb alternatívát kínál a nagyobb üdülőhelyekhez
-                        képest, így tökéletes helyszín a kikapcsolódásra. Az itt található vendégházak és apartmanok
-                        kiváló
-                        lehetőséget nyújtanak a hosszabb tartózkodásra is.</p>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>© 2025 Strandolós Oldal</p>
-        </footer>
-    </div>
-
-</body>
-
+    <script src="js/functions.js"></script>
+  </body>
 </html>

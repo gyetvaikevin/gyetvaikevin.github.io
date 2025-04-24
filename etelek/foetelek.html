@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <!-- Alap meta címkék -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta címkék -->
+    <title>XL Pizza & Ételbár | Friss pizzák és házias ételek | Sződ</title>
+    <meta name="description"
+        content="Sződ legfinomabb pizzái és magyar specialitásai! A XL Pizza & Ételbár minőségi alapanyagokból készít elérhető áron ételt. Házhozszállítás Sződön és környékén.">
+    <meta name="keywords"
+        content="pizza sződ, ételbár sződ, magyar konyha, gyorsétterem sződ, ételrendelés sződ, friss pizza, olcsó étel, házhozszállítás sződ">
+
+    <!-- OpenGraph / Social Media meta címkék -->
+    <meta property="og:title" content="XL Pizza & Ételbár Sződön | Friss pizzák és házias ételek">
+    <meta property="og:description"
+        content="Sződ legfinomabb pizzái! Próbáld ki házias specialitásainkat is. Házhozszállítás Sződön és környékén.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.xlpizza-szod.hu">
+    <meta property="og:image" content="https://www.xlpizza-szod.hu/images/og-image.jpg">
+    <meta property="og:locale" content="hu_HU">
+
+    <!-- Twitter Card meta címkék -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="XL Pizza & Ételbár Sződön | Friss pizzák és házias ételek">
+    <meta name="twitter:description" content="Sződ legfinomabb pizzái! Házhozszállítás Sződön és környékén.">
+    <meta name="twitter:image" content="https://www.xlpizza-szod.hu/images/twitter-image.jpg">
+
+    <!-- Helyspecifikus meta adatok -->
+    <meta name="geo.region" content="HU-PE">
+    <meta name="geo.placename" content="Sződ">
+    <meta name="geo.position" content="47.7245;19.1768">
+    <meta name="ICBM" content="47.7245, 19.1768">
+
+    <link rel="icon" href="../img/xl-pizza-logo2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/xl-pizza-logo2.ico" alt="XL Pizza & Ételbár Logo">
+            </a>
+        </div>
+        <!-- Hamburger ikon -->
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="navbar nav-links" id="navbar">
+            <ul>
+                <li>
+                    <i class="fas fa-phone"></i> <!-- Telefon ikon -->
+                    <a href="tel:+36 70 781 2121">+36 70 781 2121</a> <!-- Telefon link -->
+                </li>
+                <li><a href="../index.html">Kezdőlap</a></li>
+                <li class="dropdown">
+                    <a href="../etlap.html">Étlap</a>
+                    <ul class="dropdown-menu sub-menu">
+                        <li><a href="../etelek/foetelek.html">Főételek</a></li>
+                        <li><a href="../etelek/pizzak.html">Pizzák</a></li>
+                        <li><a href="../etelek/talak.html">Tálak</a></li>
+                        <li><a href="../etelek/levesek.html">Levesek</a></li>
+                        <li><a href="../etelek/desszertek.html">Desszertek</a></li>
+                    </ul>
+                </li>
+                <li><a href="../kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="details-container">
+        <h2>Főételeink</h2>
+        <div class="container">
+            <!-- Főétel 1 -->
+            <div class="card">
+                <img src="../img/rantott-csirke.jpg" alt="Rántott csirke">
+                <h2>Rántott szelet (csirke, sertés, pulyka)</h2>
+                <p>Választható csirke, sertés vagy pulyka, hasábburgonyával.</p>
+                <p>Ár: 1900 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 2 -->
+            <div class="card">
+                <img src="../img/szezammagos-csirkemell.jpg" alt="Szezámmagos csirkemell">
+                <h2>Szezámmagos csirkemell</h2>
+                <p>Szezámmagos bundában sült csirkemell.</p>
+                <p>Ár: 2000 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 3 -->
+            <div class="card">
+                <img src="../img/bolognai-borda.jpg" alt="Bolognai borda">
+                <h2>Bolognai borda</h2>
+                <p>Sertésborda bolognai raguval.</p>
+                <p>Ár: 2350 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 4 -->
+            <div class="card">
+                <img src="../img/karpati-borzaska.jpg" alt="Kárpáti borzaska">
+                <h2>Kárpáti borzaska</h2>
+                <p>Fűszeres tejföllel és sajttal.</p>
+                <p>Ár: 2450 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 5 -->
+            <div class="card">
+                <img src="../img/gordon-bleu.jpg" alt="Cordon bleu">
+                <h2>Cordon bleu XL módra</h2>
+                <p>Rántott sajtos-sonkás csirkemell.</p>
+                <p>Ár: 2450 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 6 -->
+            <div class="card">
+                <img src="../img/hannoveri-pulykamell.jpg" alt="Hannoveri pulykamell">
+                <h2>Hannoveri pulykamell</h2>
+                <p>Szezámmagos köntösben sütve.</p>
+                <p>Ár: 2600 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 7 -->
+            <div class="card">
+                <img src="../img/rantott-sajt.jpg" alt="Rántott sajt">
+                <h2>Rántott sajt</h2>
+                <p>Tartármártással.</p>
+                <p>Ár: 1900 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 8 -->
+            <div class="card">
+                <img src="../img/camambert.jpg" alt="Rántott camembert">
+                <h2>Rántott camembert</h2>
+                <p>Áfonyalekvárral.</p>
+                <p>Ár: 2350 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 9 -->
+            <div class="card">
+                <img src="../img/rantott-gomba.jpg" alt="Rántott gomba">
+                <h2>Rántott gomba</h2>
+                <p>Tartármártással.</p>
+                <p>Ár: 1900 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 10 -->
+            <div class="card">
+                <img src="../img/ciganypecsenye.jpg" alt="Cigánypecsenye">
+                <h2>Cigánypecsenye</h2>
+                <p>Fokhagymás vajjal.</p>
+                <p>Ár: 2350 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 11 -->
+            <div class="card">
+                <img src="../img/szalkai-borda.jpg" alt="Szalkai borda">
+                <h2>Szalkai borda</h2>
+                <p>Kolbásszal, sajttal és lilahagymával töltve.</p>
+                <p>Ár: 2600 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 12 -->
+            <div class="card">
+                <img src="../img/marha-porkolt.jpg" alt="Marhapörkölt">
+                <h2>Marhapörkölt</h2>
+                <p>Friss galuskával.</p>
+                <p>Ár: 2600 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Főétel 13 -->
+            <div class="card">
+                <img src="../img/korosi-borda.jpg" alt="Körösi borda">
+                <h2>Kőrösi borda</h2>
+                <p>Mustárral, csülökkel, sajttal és lilahagymával töltve.</p>
+                <p>Ár: 2600 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+            <!-- További ételek... -->
+        </div>
+
+        <h2>Tészták</h2>
+        <div class="container">
+            <!-- Tészta 1 -->
+            <div class="card">
+                <img src="../img/bolognai-spagetti.jpg" alt="Bolognai spagetti">
+                <h2>Bolognai spagetti</h2>
+                <p>Hagyományos bolognai raguval.</p>
+                <p>Ár: 1700 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Tészta 2 -->
+            <div class="card">
+                <img src="../img/tejszines-csirkes-penne.jpg" alt="Tejszínes csirkés penne">
+                <h2>Tejszínes csirkés penne</h2>
+                <p>Tejszínes csirkés penne friss zöldségekkel.</p>
+                <p>Ár: 1700 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Tészta 3 -->
+            <div class="card">
+                <img src="../img/paradicsomos-penne.webp" alt="Paradicsomos penne">
+                <h2>Paradicsomos penne</h2>
+                <p>Friss paradicsomszószban készült penne tészta.</p>
+                <p>Ár: 1700 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+        </div>
+
+        <h2>Köretek</h2>
+        <div class="container">
+            <!-- Körét 1 -->
+            <div class="card">
+                <img src="../img/rizs.jpg" alt="Rizs">
+                <h2>Rizs</h2>
+                <p>Frissen főtt rizs.</p>
+                <p>Ár: 500 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Körét 2 -->
+            <div class="card">
+                <img src="../img/hasabburgonya.jpg" alt="Hasábburgonya">
+                <h2>Hasábburgonya</h2>
+                <p>Ropogós hasábburgonya.</p>
+                <p>Ár: 500 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- További köretek... -->
+        </div>
+
+        <h2>Savanyúságok</h2>
+        <div class="container">
+            <!-- Savanyúság 1 -->
+            <div class="card">
+                <img src="../img/csemege-uborka.jpg" alt="Csemege uborka">
+                <h2>Csemege uborka</h2>
+                <p>Friss csemege uborka.</p>
+                <p>Ár: 500 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- Savanyúság 2 -->
+            <div class="card">
+                <img src="../img/vegyes-vagott.jpg" alt="Vegyes vágott">
+                <h2>Vegyes vágott</h2>
+                <p>Vegyes savanyúságok.</p>
+                <p>Ár: 500 Ft</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>
+            </div>
+
+            <!-- További savanyúságok... -->
+        </div>
+    </div>
+    <button id="backToTop" title="Vissza a tetejére">↑</button>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> XL Pizza & Ételbár. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="../js/functions.js"></script>
+</body>
+
+</html>
