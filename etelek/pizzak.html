@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <!-- Alap meta címkék -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta címkék -->
+    <title>XL Pizza & Ételbár | Friss pizzák és házias ételek | Sződ</title>
+    <meta name="description"
+        content="Sződ legfinomabb pizzái és magyar specialitásai! A XL Pizza & Ételbár minőségi alapanyagokból készít elérhető áron ételt. Házhozszállítás Sződön és környékén.">
+    <meta name="keywords"
+        content="pizza sződ, ételbár sződ, magyar konyha, gyorsétterem sződ, ételrendelés sződ, friss pizza, olcsó étel, házhozszállítás sződ">
+
+    <!-- OpenGraph / Social Media meta címkék -->
+    <meta property="og:title" content="XL Pizza & Ételbár Sződön | Friss pizzák és házias ételek">
+    <meta property="og:description"
+        content="Sződ legfinomabb pizzái! Próbáld ki házias specialitásainkat is. Házhozszállítás Sződön és környékén.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.xlpizza-szod.hu">
+    <meta property="og:image" content="https://www.xlpizza-szod.hu/images/og-image.jpg">
+    <meta property="og:locale" content="hu_HU">
+
+    <!-- Twitter Card meta címkék -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="XL Pizza & Ételbár Sződön | Friss pizzák és házias ételek">
+    <meta name="twitter:description" content="Sződ legfinomabb pizzái! Házhozszállítás Sződön és környékén.">
+    <meta name="twitter:image" content="https://www.xlpizza-szod.hu/images/twitter-image.jpg">
+   
+    <!-- Helyspecifikus meta adatok -->
+    <meta name="geo.region" content="HU-PE">
+    <meta name="geo.placename" content="Sződ">
+    <meta name="geo.position" content="47.7245;19.1768">
+    <meta name="ICBM" content="47.7245, 19.1768">
+
+    <link rel="icon" href="../img/xl-pizza-logo2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/xl-pizza-logo2.ico" alt="XL Pizza & Ételbár Logo">
+            </a>
+        </div>
+        <!-- Hamburger ikon -->
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="navbar nav-links" id="navbar">
+            <ul>
+                <li>
+                    <i class="fas fa-phone"></i> <!-- Telefon ikon -->
+                    <a href="tel:+36 70 781 2121">+36 70 781 2121</a> <!-- Telefon link -->
+                </li>
+                <li><a href="../index.html">Kezdőlap</a></li>
+                <li class="dropdown">
+                    <a href="../etlap.html">Étlap</a>
+                    <ul class="dropdown-menu sub-menu">
+                        <li><a href="../etelek/foetelek.html">Főételek</a></li>
+                        <li><a href="../etelek/pizzak.html">Pizzák</a></li>
+                        <li><a href="../etelek/talak.html">Tálak</a></li>
+                        <li><a href="../etelek/levesek.html">Levesek</a></li>
+                        <li><a href="../etelek/desszertek.html">Desszertek</a></li>
+                    </ul>
+                </li>
+                <li><a href="../kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="details-container">
+        <h2>Pizzáink</h2>
+        <div class="container">
+            <!-- Margarita -->
+            <div class="card">
+                <img src="../img/margharita-pizza.webp" alt="Margarita">
+                <h2>Margarita</h2>
+                <p>Paradicsomszósz, sajt, oregánó.</p>
+                <p>Ár: 2600 Ft (32 cm) / 4810 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button>  
+            </div>
+
+            <!-- Songoku -->
+            <div class="card">
+                <img src="../img/songoku-pizza.jpg" alt="Songoku">
+                <h2>Songoku</h2>
+                <p>Paradicsomszósz, sajt, sonka, gomba, kukorica.</p>
+                <p>Ár: 3150 Ft (32 cm) / 5820 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Bolognai -->
+            <div class="card">
+                <img src="../img/bolognai-pizza.jpg" alt="Bolognai">
+                <h2>Bolognai</h2>
+                <p>Bolognai ragu, sajt.</p>
+                <p>Ár: 2890 Ft (32 cm) / 5350 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Bitang -->
+            <div class="card">
+                <img src="../img/bitang-pizza.jpg" alt="Bitang">
+                <h2>Bitang</h2>
+                <p>Erős Pistás alap, kolbász, hegyes erős, pepperoni, sajt.</p>
+                <p>Ár: 3150 Ft (32 cm) / 5820 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Szalámis -->
+            <div class="card">
+                <img src="../img/szalamis-pizza.jpg" alt="Szalámis">
+                <h2>Szalámis</h2>
+                <p>Paradicsomszósz, szalámi, sajt, kukorica, lilahagyma.</p>
+                <p>Ár: 2900 Ft (32 cm) / 5360 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Tarjás -->
+            <div class="card">
+                <img src="../img/tarjas-pizza.jpg" alt="Tarjás">
+                <h2>Tarjás</h2>
+                <p>Paradicsomszósz, tarja, sajt, paradicsom, lilahagyma.</p>
+                <p>Ár: 3150 Ft (32 cm) / 5820 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Hawaii -->
+            <div class="card">
+                <img src="../img/hawaii-pizza.jpg" alt="Hawaii">
+                <h2>Hawaii</h2>
+                <p>Paradicsomszósz, sonka, sajt, kukorica, ananász.</p>
+                <p>Ár: 3150 Ft (32 cm) / 5820 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Magyaros -->
+            <div class="card">
+                <img src="../img/magyaros-pizza.webp" alt="Magyaros">
+                <h2>Magyaros</h2>
+                <p>Paradicsomszósz, kolbász, bacon, sajt, lilahagyma.</p>
+                <p>Ár: 3250 Ft (32 cm) / 6010 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Húsimádó -->
+            <div class="card">
+                <img src="../img/husimado-pizza.jpg" alt="Húsimádó">
+                <h2>Húsimádó</h2>
+                <p>Paradicsomszósz, sonka, csirkemell, bacon, tarja, sajt.</p>
+                <p>Ár: 3690 Ft (32 cm) / 6820 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Tonhalas -->
+            <div class="card">
+                <img src="../img/tonhalas-pizza.webp" alt="Tonhalas">
+                <h2>Tonhalas</h2>
+                <p>Paradicsomszósz, tonhal, sajt, lilahagyma, paradicsom.</p>
+                <p>Ár: 3300 Ft (32 cm) / 6100 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Kívánság -->
+            <div class="card">
+                <img src="../img/kivansag-pizza.png" alt="Kívánság">
+                <h2>Kívánság</h2>
+                <p>Választható alap, sajt + 6 feltét.</p>
+                <p>Ár: 3500 Ft (32 cm) / 6480 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Brokkolis -->
+            <div class="card">
+                <img src="../img/brokkolis-pizza.jpg" alt="Brokkolis">
+                <h2>Brokkolis</h2>
+                <p>Tejfölös alap, sonka, brokkoli, kukorica, sajt.</p>
+                <p>Ár: 3200 Ft (32 cm) / 5920 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Gyrosos -->
+            <div class="card">
+                <img src="../img/gyrosos-pizza.webp" alt="Gyrosos">
+                <h2>Gyrosos</h2>
+                <p>Tejfölös alap, gyros csirke, sajt, lilahagyma.</p>
+                <p>Ár: 3290 Ft (32 cm) / 6100 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Sonkás-kukoricás -->
+            <div class="card">
+                <img src="../img/sonkas-kukoricas-pizza.jpg" alt="Sonkás-kukoricás">
+                <h2>Sonkás-kukoricás</h2>
+                <p>Paradicsomszósz, sonka, sajt, kukorica.</p>
+                <p>Ár: 3100 Ft (32 cm) / 5750 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+
+            <!-- Sonkás -->
+            <div class="card">
+                <img src="../img/sonkas-pizza.jpg" alt="Sonkás">
+                <h2>Sonkás</h2>
+                <p>Paradicsomszósz, sonka, sajt.</p>
+                <p>Ár: 3000 Ft (32 cm) / 5500 Ft (45 cm)</p>
+                <button class="btn-hide"><a href="tel:+36707812121" class="call-button">Hívás most!</a></button> 
+            </div>
+        </div>
+    </div>
+    
+    <button id="backToTop" title="Vissza a tetejére">↑</button>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> XL Pizza & Ételbár. Minden jog fenntartva.</p>
+    </footer>
+    
+    <script src="../js/functions.js"></script>
+</body>
+
+</html>
