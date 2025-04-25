@@ -1,24 +1,13 @@
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 
+
 function toggleMenu() {
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.getElementById("navbar");
-  
   hamburger.classList.toggle("active");
-  
-  // FadeToggle logika
-  if (navLinks.style.opacity === '0' || navLinks.style.opacity === '') {
-    navLinks.style.display = 'block';
-    setTimeout(() => {
-      navLinks.style.opacity = '1';
-    }, 10);
-  } else {
-    navLinks.style.opacity = '0';
-    setTimeout(() => {
-      navLinks.style.display = 'none';
-    }, 300); // Időzítés megegyezik a CSS transition idővel
-  }
+  navLinks.classList.toggle("active");
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
   // Slider funkcionalitás
