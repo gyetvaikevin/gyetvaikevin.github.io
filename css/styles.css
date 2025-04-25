@@ -746,3 +746,23 @@ video::-webkit-media-controls {
   bottom: 20px;
   opacity: 1;
 }
+
+/* Ensure navbar is always visible on desktop */
+@media (min-width: 769px) {
+  #navbar {
+    display: flex; /* Ensure the navbar is displayed */
+    position: static; /* Reset position if it was set to absolute or fixed */
+    visibility: visible; /* Ensure visibility */
+    opacity: 1; /* Ensure full opacity */
+    transform: none; /* Reset any transform applied for mobile */
+  }
+
+  #navbar.active {
+    /* Remove any mobile-specific styles */
+    display: flex;
+  }
+
+  .hamburger {
+    display: none; /* Hide the hamburger menu on desktop */
+  }
+}
